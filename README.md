@@ -3,18 +3,18 @@
 ## 📌 Overview
 
 AutoTest Nexus is a scalable automation testing framework built in Python that supports both **UI and API testing**.
-The project follows industry-standard QA practices, including **test case design, bug reporting, and test execution reporting**, making it a complete testing solution.
+It follows industry-standard QA practices including **test case design, bug reporting, and test execution reporting**, making it a complete testing solution suitable for real-world applications.
 
 ---
 
 ## 🧪 Key Features
 
-* 🌐 UI Automation using Selenium
+* 🌐 UI Automation using Selenium WebDriver
 * 🔌 API Testing using Python `requests`
-* 🧱 Page Object Model (POM) for maintainable test design
-* ⚡ Parallel execution using pytest-xdist
-* 🔁 Retry mechanism for flaky tests
-* 🧠 Smart validation utilities for flexible assertions
+* 🧱 Page Object Model (POM) for maintainable and scalable design
+* ⚡ Parallel execution using `pytest-xdist`
+* 🔁 Retry mechanism for handling flaky tests
+* 🧠 Custom validation utilities for flexible assertions
 * 📊 HTML reporting using PyTest
 * 📄 QA documentation (Test Cases, Bug Reports, Test Reports)
 
@@ -26,19 +26,24 @@ The project follows industry-standard QA practices, including **test case design
 * Selenium
 * PyTest
 * Requests
+* PyTest Plugins (xdist, html, rerunfailures)
 
 ---
 
 ## 📁 Project Structure
 
-```id="m6g9s1"
+```
 autotest-nexus/
 │
 ├── tests/            # Test cases (UI + API)
-├── pages/            # Page Object Models
+├── pages/            # Page Object Model classes
 ├── api/              # API client layer
-├── utils/            # Reusable utilities
-├── docs/             # QA documentation (test cases, bug reports, reports)
+├── utils/            # Helper utilities
+├── assets/           # Screenshots (reports/output)
+├── docs/             # QA documentation
+│   ├── test_cases.md
+│   ├── bug_report.md
+│   └── test_report.md
 │
 ├── conftest.py
 ├── pytest.ini
@@ -50,63 +55,79 @@ autotest-nexus/
 
 ## ▶️ How to Run
 
-### 1️⃣ Install dependencies
+### 1️⃣ Clone Repository
 
-```id="r8x2kp"
+```
+git clone https://github.com/Srishti-04/AutoTest-Nexus.git
+cd AutoTest-Nexus
+```
+
+### 2️⃣ Create Virtual Environment
+
+```
+python -m venv venv
+venv\Scripts\activate   # Windows
+```
+
+### 3️⃣ Install Dependencies
+
+```
 pip install -r requirements.txt
 ```
 
-### 2️⃣ Run tests
+### 4️⃣ Run Tests
 
-```id="c5n1az"
+```
 pytest
 ```
 
-### 3️⃣ Run in parallel
+### 5️⃣ Run Tests in Parallel
 
-```id="t4y8qs"
+```
 pytest -n auto
 ```
 
-### 4️⃣ Run with retry
+### 6️⃣ Run with Retry Mechanism
 
-```id="y2p7vl"
+```
 pytest --reruns 2
 ```
 
 ---
 
-## 📄 QA Documentation
+## 📸 Test Execution Report
 
-This project includes essential QA artifacts:
+Below is a sample HTML report generated after running the test suite:
 
-* **Test Cases** → `docs/test_cases.md`
-* **Bug Reports** → `docs/bug_report.md`
-* **Test Execution Reports** → `docs/test_report.md`
+![Test Report](assets/report.png)
 
 ---
 
-## 📊 Sample Output
+## 📄 QA Documentation
 
-* Generates HTML report after execution
-* Displays pass/fail status for each test
+This project includes complete QA artifacts:
+
+* **Test Cases** → `docs/test_cases.md`
+* **Bug Reports** → `docs/bug_report.md`
+* **Test Execution Report** → `docs/test_report.md`
 
 ---
 
 ## 🎯 Use Cases
 
-* Web application testing (UI flows)
+* Functional UI testing of web applications
 * Backend API validation
 * Regression testing
-* QA process demonstration (documentation + execution)
+* Demonstration of complete QA workflow
 
 ---
 
 ## 📈 Future Enhancements
 
 * CI/CD integration (Jenkins / GitHub Actions)
-* Docker-based execution
+* Dockerized execution
 * Advanced reporting dashboards
+* Integration with test management tools
 
 ---
 
