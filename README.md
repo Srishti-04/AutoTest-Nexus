@@ -1,45 +1,63 @@
-# 🚀 AutoTest Nexus – QA Automation Framework
+# 🚀 AutoTest Nexus
 
-A scalable automation testing framework built using Selenium and PyTest, designed for UI and API testing with CI/CD integration.
+## 📌 Overview
 
----
-
-## 🧠 Features
-
-- UI Automation using Selenium WebDriver  
-- API Testing using Python (requests)  
-- Data-Driven Testing using JSON  
-- Parallel Test Execution using pytest-xdist  
-- HTML Test Reports using pytest-html  
-- Logging for debugging and traceability  
-- CI/CD Integration using GitHub Actions  
-- Headless browser execution for CI environments  
+AutoTest Nexus is a scalable automation testing framework built in Python that supports both **UI and API testing**.  
+It follows industry-standard QA practices including **test case design, bug reporting, and test execution reporting**, making it a complete testing solution suitable for real-world applications.
 
 ---
 
-## 🛠️ Tech Stack
+## 🧪 Key Features
 
-Python, Selenium, PyTest, Requests, GitHub Actions
-
----
-
-## ⚙️ Project Structure
-
----
-
-## 🚀 How to Run
-
-Clone the repository:
-
-Create virtual environment:
-
-Install dependencies:
-
-Run tests:
+* 🌐 UI Automation using Selenium WebDriver with scalable test design  
+* 🔌 API Testing using Python `requests` for validating REST endpoints  
+* 🧱 Page Object Model (POM) architecture for reusable and maintainable code  
+* ⚡ Parallel test execution using `pytest-xdist` for faster test runs  
+* 🔁 Retry mechanism to handle flaky tests and improve reliability  
+* 📊 HTML reporting using PyTest for detailed test execution insights  
+* 🧠 Data-driven testing using external JSON data for multiple scenarios  
+* 📝 Logging system for debugging and execution traceability  
+* 🔄 CI/CD integration using GitHub Actions for automated test execution  
+* 🧪 Support for functional, regression, and integration testing  
+* 🛠 Designed following real-world QA workflows including test case design, execution, and reporting  
 
 ---
 
-## 📊 Test Report
+## 🛠 Tech Stack
+
+* Python  
+* Selenium  
+* PyTest  
+* Requests  
+* PyTest Plugins (xdist, html, rerunfailures)  
+* GitHub Actions  
+
+---
+
+## 📁 Project Structure
+
+---
+
+## ▶️ How to Run
+
+### 1️⃣ Clone Repository
+
+### 2️⃣ Create Virtual Environment
+
+### 3️⃣ Install Dependencies
+
+### 4️⃣ Run Tests
+
+### 5️⃣ Run Tests in Parallel
+
+
+### 6️⃣ Run with Retry Mechanism
+
+---
+
+## 📸 Test Execution Report
+
+Below is a sample HTML report generated after running the test suite:
 
 ![Test Report](assets/report.png)
 
@@ -53,22 +71,31 @@ Automated tests run on every push using GitHub Actions.
 
 ---
 
-## 🎯 Key Highlights
+## 📄 QA Documentation
 
-- Designed using Page Object Model (POM) for maintainability  
-- Implemented data-driven testing for multiple scenarios  
-- Integrated CI/CD pipeline for continuous testing  
-- Enabled headless browser execution for CI environments  
-- Added logging system for debugging and traceability  
+This project includes complete QA artifacts:
+
+* **Test Cases** → `docs/test_cases.md`  
+* **Bug Reports** → `docs/bug_report.md`  
+* **Test Execution Report** → `docs/test_report.md`  
 
 ---
 
-## 📌 Future Improvements
+## 🎯 Use Cases
 
-- Docker integration  
-- Jenkins pipeline  
-- Allure reporting  
-- Cross-browser testing  
+* Functional UI testing of web applications  
+* Backend API validation  
+* Regression testing  
+* Demonstration of complete QA workflow  
+
+---
+
+## 📈 Future Enhancements
+
+* Docker integration  
+* Jenkins pipeline  
+* Advanced reporting dashboards  
+* Integration with test management tools  
 
 ---
 
