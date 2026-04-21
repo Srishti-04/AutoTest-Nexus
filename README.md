@@ -93,7 +93,7 @@ pytest --reruns 2
 
 ## 📸 Test Report
 
-![Test Report](assets/report.png)
+![Test Report](assets/report2.png)
 
 ---
 
