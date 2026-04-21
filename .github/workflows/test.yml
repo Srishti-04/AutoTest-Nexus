@@ -2,7 +2,6 @@ name: Run Automation Tests
 
 on:
   push:
-    branches: [ main ]
 
 jobs:
   test:
@@ -19,6 +18,13 @@ jobs:
 
     - name: Install Dependencies
       run: pip install -r requirements.txt
+
+   
+    - name: Install Chrome
+      uses: browser-actions/setup-chrome@v1
+
+    - name: Install ChromeDriver
+      uses: nanasess/setup-chromedriver@v2
 
     - name: Run Tests
       run: pytest
