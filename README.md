@@ -9,18 +9,18 @@ It follows industry-standard QA practices including **test case design, bug repo
 
 ## 🧪 Key Features
 
-🌐 UI Automation using Selenium WebDriver with scalable and maintainable test design
-🔌 API Testing using Python requests for validating RESTful endpoints and response data
-🧱 Page Object Model (POM) architecture for reusable, modular, and clean code structure
-⚡ Parallel test execution using pytest-xdist to optimize execution time
-🔁 Retry mechanism using pytest-rerunfailures to handle flaky tests and improve stability
-📊 HTML reporting using PyTest for detailed execution insights and result tracking
-🧠 Data-driven testing using external JSON data to validate multiple test scenarios efficiently
-📝 Centralized logging system for debugging, traceability, and failure analysis
-🔄 CI/CD integration using GitHub Actions for continuous automated test execution
-🧪 Support for functional, regression, and integration testing across different layers
-📈 Performance awareness through concurrent execution and response validation
-🛠 Designed following real-world QA workflows including test case design, execution, defect tracking, and reporting
+- 🌐 UI Automation using Selenium WebDriver with scalable and maintainable test design  
+- 🔌 API Testing using Python `requests` for validating RESTful endpoints and response data  
+- 🧱 Page Object Model (POM) architecture for reusable, modular, and clean code structure  
+- ⚡ Parallel test execution using `pytest-xdist` to optimize execution time  
+- 🔁 Retry mechanism using `pytest-rerunfailures` to handle flaky tests and improve stability  
+- 📊 HTML reporting using PyTest for detailed execution insights and result tracking  
+- 🧠 Data-driven testing using external JSON data to validate multiple test scenarios efficiently  
+- 📝 Centralized logging system for debugging, traceability, and failure analysis  
+- 🔄 CI/CD integration using GitHub Actions for continuous automated test execution  
+- 🧪 Support for functional, regression, and integration testing across different layers  
+- 📈 Performance awareness through concurrent execution and response validation  
+- 🛠 Designed following real-world QA workflows including test case design, execution, defect tracking, and reporting  
 
 ---
 
