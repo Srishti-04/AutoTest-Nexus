@@ -9,55 +9,89 @@ It follows industry-standard QA practices including **test case design, bug repo
 
 ## 🧪 Key Features
 
-* 🌐 UI Automation using Selenium WebDriver with scalable test design  
-* 🔌 API Testing using Python `requests` for validating REST endpoints  
-* 🧱 Page Object Model (POM) architecture for reusable and maintainable code  
-* ⚡ Parallel test execution using `pytest-xdist` for faster test runs  
-* 🔁 Retry mechanism to handle flaky tests and improve reliability  
-* 📊 HTML reporting using PyTest for detailed test execution insights  
-* 🧠 Data-driven testing using external JSON data for multiple scenarios  
-* 📝 Logging system for debugging and execution traceability  
-* 🔄 CI/CD integration using GitHub Actions for automated test execution  
-* 🧪 Support for functional, regression, and integration testing  
-* 🛠 Designed following real-world QA workflows including test case design, execution, and reporting  
+🌐 UI Automation using Selenium WebDriver with scalable and maintainable test design
+🔌 API Testing using Python requests for validating RESTful endpoints and response data
+🧱 Page Object Model (POM) architecture for reusable, modular, and clean code structure
+⚡ Parallel test execution using pytest-xdist to optimize execution time
+🔁 Retry mechanism using pytest-rerunfailures to handle flaky tests and improve stability
+📊 HTML reporting using PyTest for detailed execution insights and result tracking
+🧠 Data-driven testing using external JSON data to validate multiple test scenarios efficiently
+📝 Centralized logging system for debugging, traceability, and failure analysis
+🔄 CI/CD integration using GitHub Actions for continuous automated test execution
+🧪 Support for functional, regression, and integration testing across different layers
+📈 Performance awareness through concurrent execution and response validation
+🛠 Designed following real-world QA workflows including test case design, execution, defect tracking, and reporting
 
 ---
 
 ## 🛠 Tech Stack
 
-* Python  
-* Selenium  
-* PyTest  
-* Requests  
-* PyTest Plugins (xdist, html, rerunfailures)  
-* GitHub Actions  
+Python, Selenium, PyTest, Requests, GitHub Actions
 
 ---
 
 ## 📁 Project Structure
 
+```
+AutoTest-Nexus/
+│── tests/
+│── pages/
+│── api/
+│── utils/
+│── assets/
+│── docs/
+│── testdata.json
+│── conftest.py
+│── pytest.ini
+│── requirements.txt
+│── README.md
+```
+
 ---
 
 ## ▶️ How to Run
 
-### 1️⃣ Clone Repository
+### 1. Clone Repository
 
-### 2️⃣ Create Virtual Environment
+```
+git clone https://github.com/Srishti-04/AutoTest-Nexus.git
+cd AutoTest-Nexus
+```
 
-### 3️⃣ Install Dependencies
+### 2. Create Virtual Environment
 
-### 4️⃣ Run Tests
+```
+python -m venv venv
+venv\Scripts\activate
+```
 
-### 5️⃣ Run Tests in Parallel
+### 3. Install Dependencies
 
+```
+pip install -r requirements.txt
+```
 
-### 6️⃣ Run with Retry Mechanism
+### 4. Run Tests
+
+```
+pytest --html=report.html
+```
+
+### 5. Run Tests in Parallel
+
+```
+pytest -n auto
+```
+
+### 6. Run with Retry
+
+```
+pytest --reruns 2
+```
 
 ---
 
-## 📸 Test Execution Report
-
-Below is a sample HTML report generated after running the test suite:
+## 📸 Test Report
 
 ![Test Report](assets/report.png)
 
@@ -73,29 +107,27 @@ Automated tests run on every push using GitHub Actions.
 
 ## 📄 QA Documentation
 
-This project includes complete QA artifacts:
-
-* **Test Cases** → `docs/test_cases.md`  
-* **Bug Reports** → `docs/bug_report.md`  
-* **Test Execution Report** → `docs/test_report.md`  
+- Test Cases → docs/test_cases.md  
+- Bug Reports → docs/bug_report.md  
+- Test Execution Report → docs/test_report.md  
 
 ---
 
 ## 🎯 Use Cases
 
-* Functional UI testing of web applications  
-* Backend API validation  
-* Regression testing  
-* Demonstration of complete QA workflow  
+- Functional UI testing  
+- API validation  
+- Regression testing  
+- End-to-end QA workflow demonstration  
 
 ---
 
 ## 📈 Future Enhancements
 
-* Docker integration  
-* Jenkins pipeline  
-* Advanced reporting dashboards  
-* Integration with test management tools  
+- Docker integration  
+- Jenkins pipeline  
+- Allure reporting  
+- Cross-browser testing  
 
 ---
 
