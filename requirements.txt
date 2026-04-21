@@ -1,6 +1,5 @@
-selenium
 pytest
+selenium
 requests
+pytest-html
 pytest-xdist
-pytest-rerunfailures
-webdriver-manager
