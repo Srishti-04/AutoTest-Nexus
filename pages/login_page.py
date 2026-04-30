@@ -1,23 +1,16 @@
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 
 class LoginPage:
 
     def __init__(self, driver):
         self.driver = driver
 
-    # Locators (best practice: mix usage)
-    username = (By.ID, "username")  
-    password = (By.ID, "password")  
-    login_btn = (By.CSS_SELECTOR, "button[type='submit']")  
-    flash_msg = (By.XPATH, "//div[@id='flash']")  
+    # XPath locator (important for resume/interview)
+    search_box = (By.XPATH, "//textarea[@name='q']")
 
     def open(self):
-        self.driver.get("https://the-internet.herokuapp.com/login")
+        self.driver.get("https://www.google.com")
 
-    def login(self, user, pwd):
-        self.driver.find_element(*self.username).send_keys(user)
-        self.driver.find_element(*self.password).send_keys(pwd)
-        self.driver.find_element(*self.login_btn).click()
-
-    def get_message(self):
-        return self.driver.find_element(*self.flash_msg).text
+    def search(self, text):
+        self.driver.find_element(*self.search_box).send_keys(text + Keys.RETURN)
