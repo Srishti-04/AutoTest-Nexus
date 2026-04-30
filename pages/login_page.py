@@ -5,10 +5,11 @@ class LoginPage:
     def __init__(self, driver):
         self.driver = driver
 
-    username = (By.ID, "username")
-    password = (By.ID, "password")
-    login_btn = (By.CSS_SELECTOR, "button[type='submit']")
-    flash_msg = (By.ID, "flash")
+    # Locators (best practice: mix usage)
+    username = (By.ID, "username")  
+    password = (By.ID, "password")  
+    login_btn = (By.CSS_SELECTOR, "button[type='submit']")  
+    flash_msg = (By.XPATH, "//div[@id='flash']")  
 
     def open(self):
         self.driver.get("https://the-internet.herokuapp.com/login")

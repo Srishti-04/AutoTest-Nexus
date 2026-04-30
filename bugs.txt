@@ -1,0 +1,40 @@
+Bug ID: BUG-001
+Title: Flash message contains unwanted text
+
+Description:
+After login, the success message contains extra characters like '×' which affects readability.
+
+Steps to Reproduce:
+1. Open login page
+2. Enter valid credentials
+3. Click on login button
+
+Expected Result:
+Clean success message should be displayed.
+
+Actual Result:
+Message contains extra symbols and formatting issues.
+
+Severity: Low
+Priority: Medium
+Status: Open
+
+Bug ID: BUG-002
+Title: Error message not clearly visible
+
+Description:
+Error message overlaps UI and is not clearly readable.
+
+Steps to Reproduce:
+1. Enter invalid credentials
+2. Click login
+
+Expected Result:
+Clear error message should be displayed.
+
+Actual Result:
+Message is partially hidden.
+
+Severity: Low
+Priority: Medium
+Status: Open
